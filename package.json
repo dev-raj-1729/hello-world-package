@@ -1,0 +1,32 @@
+{
+  "name": "@dev_raj1729/hello-world",
+  "version": "1.0.0",
+  "description": "Testing out the npm publishing flow",
+  "main": "./cjs/index.js",
+  "module": "./esm/index.js",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "./cjs",
+    "./esm",
+    "./lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon",
+    "build": "rimraf ./lib ./esm ./cjs && tsc -p tsconfig.build.json && tsc -p tsconfig.cjs.json",
+    "start": "ts-node -P tsconfig.cjs.json ./src/index",
+    "clean": "rimraf ./lib ./esm ./cjs",
+    "deepClean": "rimraf ./lib ./esm ./cjs ./node_modules",
+    "prepublishOnly": "npm run build"
+  },
+  "author": {
+    "name": "Dev Raj R"
+  },
+  "license": "AGPL-3.0-only",
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2"
+  }
+}
