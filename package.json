@@ -1,6 +1,6 @@
 {
   "name": "@dev_raj1729/hello-world",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Testing out the npm publishing flow",
   "main": "./cjs/index.js",
   "module": "./esm/index.js",
