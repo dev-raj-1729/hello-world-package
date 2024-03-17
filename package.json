@@ -10,6 +10,13 @@
     "./esm",
     "./lib"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dev-raj-1729/hello-world-package.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dev-raj-1729/hello-world-package/issues"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon",
@@ -22,6 +29,11 @@
   "author": {
     "name": "Dev Raj R"
   },
+  "keywords": [
+    "hello",
+    "world",
+    "hello world"
+  ],
   "license": "AGPL-3.0-only",
   "devDependencies": {
     "nodemon": "^3.1.0",
