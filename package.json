@@ -20,7 +20,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon",
-    "build": "rimraf ./lib ./esm ./cjs && tsc -p tsconfig.build.json && tsc -p tsconfig.cjs.json",
+    "build": "tsc -p tsconfig.build.json && tsc -p tsconfig.cjs.json",
     "start": "ts-node -P tsconfig.cjs.json ./src/index",
     "clean": "rimraf ./lib ./esm ./cjs",
     "deepClean": "rimraf ./lib ./esm ./cjs ./node_modules",
